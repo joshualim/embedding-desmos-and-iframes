@@ -1,0 +1,38 @@
+# Appendicies {#sec:appendicies}
+
+## Embedding the whole Desmos calculator {#sec:embed-whole-desmos}
+This is **not** generally recommended:
+
+- if you alter a parameter, you get an annoying "do you want to leave this page" when trying to read next page
+- can be a squeeze on smaller screens
+
+<iframe src="https://www.desmos.com/calculator/znlimgwkld" title="Damped Harmonic Oscillator in Desmos" width="100%" height="500px"></iframe>
+
+## General tips for iframes and bookdown
+
+- don't have too many iframes per page (can be slow to load, take up resources)
+- student interactions aren't persistent and nothing gets saved: they get reloaded by a student every time they visit a page
+- Consider mobile/tablet users where the screen sizes are smaller: sometimes a link is better?
+- Avoid sites with advertising or a cookie requests that distracts from the content.
+- there isn't always much space, so pick simple things to embed (bookdown has comfortable margins)
+- an iframe won't display for students if they're offline or viewing the PDF.
+
+## iframes and accessibility pitfalls
+There are no intrinsic accessibility issues with iframes. 
+
+*However*
+
+- not all iframes work nicely on mobile browsers.
+- the organization of the pages may not be clear to screen readers.
+- navigation (via keyboard or due to increased zoom/limited size) can be challenging.
+
+### Accessibility suggestions {-}
+
+- Test how it appears on your phone
+- Pick shorter/simple pages or sites that generate an embed code, rather than write your own.
+- Present a direct link alternative 
+
+---
+
+Stock images from [undraw](https://undraw.co) (open source, colour-customisable images that can be used without attribution)
+

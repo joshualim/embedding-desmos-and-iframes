@@ -1,0 +1,92 @@
+# Why embed content? 
+
+## Why include "media"? 
+<div class="columns-2">
+
+The benefits of the web (over a static document) are: 
+
+- access to up to date information
+- adding external image/video sources without worrying about copyright
+- **interactive** widgets can support the flow of learning, assessment for learning, exploration, etc
+
+<br>
+I'll talk about the downsides later...
+
+<img src="./images/undraw_Experience_design_re_ca7l.png" alt="person walking past large web browser window" width=550px>
+
+</div>
+# How? | Embedding content
+
+## The gitbook format is a fully functioning website! 
+<div class="columns-2">
+
+<img src="./images/undraw_Online_information_re_erks.png" alt="person looking at image large web browser window" width=500px>
+
+You can include:
+
+- links
+- image/video embeds 
+- webpage/webapp embeds (e.g. twitter feed, desmos graphical calculator)
+- inline html, javascript, css with `<tags>` <br> (e.g. `<p>Markup you markdown!<\p>`)
+
+</div>
+
+## Adding links {.smaller}
+<div class="columns-2">
+
+
+### Links: {-}
+
+- are simple
+- work in all formats (including PDF)
+- give students control over accessing resource
+
+### Accessibility tips for links: {-} 
+- use descriptive links where possible (e.g. [Join the bookdown usergroup](https://teams.microsoft.com/l/team/19%3a796c455c3a5a4badbfbcb5434d869e98%40thread.tacv2/conversations?groupId=1485fec3-9ca3-443b-94ae-f8fb7d07bd98&tenantId=377e3d22-4ea1-422d-b0ad-8fcc89406b9e) instead of [https://teams.microsoft.com/l/team/19%3a...](https://teams.microsoft.com/l/team/19%3a796c455c3a5a4badbfbcb5434d869e98%40thread.tacv2/conversations?groupId=1485fec3-9ca3-443b-94ae-f8fb7d07bd98&tenantId=377e3d22-4ea1-422d-b0ad-8fcc89406b9e))
+- don't force users to open links in new tab/window
+
+<img src="./images/undraw_Share_link_re_54rx.png" alt="two people exchanging large link icon" width=500px>
+
+</div>
+
+## Adding images from the web
+<div class="columns-2">
+[Educational Exceptions](https://teachinghub.bath.ac.uk/the-bath-blend/essentials/copyright/): you can use copyrighted images (e.g. figure from journal) in your lecture notes if:
+
+1. it is for internal student use
+2. it directly illustrates the content
+
+It can be useful to point to an image on the web if you:
+
+- host publicly (e.g. github)
+- use cat .gifs to support learning!
+
+<img src="https://imgs.xkcd.com/comics/copyright.jpg" alt="xkcd cartoon with balloon text sometimes I just can't get outraged over copyright law." width=450px>
+
+</div>
+
+## Adding videos
+
+Copy and paste the embed code from *any* site - including Panopto!
+
+<iframe src="https://uniofbath.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9359f6d0-d0eb-4265-a2f5-ab2000f38035&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="300px" width="50%" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
+Note: this Panopto video has [quiz questions](https://teachinghub.bath.ac.uk/how-to-use-review-for-staff/#add_quiz) as you play through it!
+
+
+## Embedding other web content
+
+<div class="columns-2">
+
+- [Desmos graphing calculator](https://www.desmos.com)
+- [Xerte](https://teachinghub.bath.ac.uk/tools-and-resources/tel/xerte-online-toolkits/) (see quiz example)
+- [Microsoft Forms](https://teachinghub.bath.ac.uk/microsoft-forms/) (general polls don't show the results to student, but quiz allows you to give individuals instant feedback after all question have been submitted)
+- [Mentimeter](https://teachinghub.bath.ac.uk/polling-with-mentimeter/) results slides (this is NOT for voting as audience paced voting slides don't show the results)
+- Twitter feed
+- A webpage (*tread carefully*)
+
+
+<iframe src="https://xerte.bath.ac.uk/play.php?template_id=2470" width="50%" height="200px"></iframe>
+
+</div>

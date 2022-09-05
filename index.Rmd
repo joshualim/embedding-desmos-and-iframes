@@ -1,0 +1,15 @@
+---
+title: "The power of the browser:"
+subtitle: "embedding Desmos and other content"
+author: "Josh Lim <br> Learning Technologist (Centre for Learning & Teaching)"
+date: "6<sup>th</sup> September 2022"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook:  default
+  bookdown::pdf_book: default
+  ioslides_presentation: 
+    widescreen: true
+    css: ioslides.css
+---
+

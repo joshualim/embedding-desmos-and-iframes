@@ -1,0 +1,12 @@
+
+/* Support for vertical scrolling*/
+slides > slide {  overflow-y: auto !important;} 
+
+/* background */
+body {
+  background: #009AAB;
+}
+
+/* hide slide number in footer */
+slides > slide:not(.nobackground):after {
+  content: '';

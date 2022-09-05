@@ -1,0 +1,105 @@
+# Desmos | a simple & interactive graphing calculator
+
+
+## Desmos graphing calculator
+
+<div class="columns-2">
+
+<iframe src="https://www.desmos.com/calculator/9cmqozrasw?embed" width="100%" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+*[View Damped Harmonic Oscillator](https://www.desmos.com/calculator/znlimgwkld)*
+
+<iframe src="https://www.desmos.com/calculator/qy6jc8mfi9?embed" width="100%" height="500px" style="border: 1px solid #ccc" frameborder="0" title="two counter moving travelling waves (upper) result in a standing wave (lower)"></iframe>
+
+*[View Travelling and standing wave plot](https://www.desmos.com/calculator/qy6jc8mfi9)*
+
+
+</div>
+
+## Desmos at a glance
+
+<div class="columns-2">
+### Why use Desmos? {-}
+
+- *Interactive* - students can play with parameters
+- Fast to create (+ easy animation)
+- [Digitally Accessible](https://help.desmos.com/hc/en-us/articles/4404860698253-What-Accessibility-features-does-Desmos-offer-)
+<!-- display and text can be altered (zoom in, fonts, high contrast, etc) and works with screen readers (e.g.  create audible representation of the graphs to convey amplitude and intercepts audibly -->
+- Free
+<br>
+
+### Plotting in desmos {-}
+- 2D Cartesian/polar coordinates
+- Domain/range restrictions/piecewise functions, 
+- Shade area with inequalities, Differentiation, ...
+- Paste [tabular data](https://help.desmos.com/hc/en-us/articles/4405489674381-Tables) from clipboard (1000 points) and [fit](https://help.desmos.com/hc/en-us/articles/4406972958733-Regressions) 
+
+</div>
+
+## Making plots in Desmos
+1. Sign up for a free account on [Desmos](https://www.desmos.com)
+2. Create graph ([see Graphing Calculator: Essential Skills](https://help.desmos.com/hc/en-us/articles/4405305421709-Graphing-Calculator-Essential-Skills))
+3. Copy embed code
+
+### Desmos Tips {-}
+- Add points on graph for quick sliders in the embed
+
+
+## How to embed a Desmos graph 
+
+1. Get the embed code from Desmos
+2. Paste in embed code to .Rmd file 
+3. Change some embed code parameters
+    -  `width="100%"`
+    -  `height="500px"` (even 600px is probably ok even for iphone)
+4. Add a direct link (fallback for PDF and the *edit on desmos* button doesn't display on mobile)
+
+## Adding a Desmos embed as a figure
+
+Same as a "normal" bookdown figure but instead of `knitr::include_graphics()` use `knitr::include_url(URL)`
+
+### Example {-}
+```{r echo=FALSE, wavesanim , out.width='70%', fig.show='hold', fig.cap="[View Travelling and standing wave plot](https://www.desmos.com/calculator/qy6jc8mfi9). Upper: two identical but counter-propogating travelling waves will result in a standing wave below. "}
+knitr::include_url("https://www.desmos.com/calculator/qy6jc8mfi9?embed")
+```
+
+### Bookdown Source {-}
+
+````{verbatim, lang = "r"}
+
+```
+{r echo=FALSE, wavesanim , out.width='70%', fig.show='hold',  fig.cap="[View Travelling and standing wave plot](https://www.desmos.com/calculator/qy6jc8mfi9). Upper: two identical but counter-propogating travelling waves will result in a standing wave below. "}
+knitr::include_url("https://www.desmos.com/calculator/qy6jc8mfi9?embed")
+```
+````
+
+### Figure embed notes {-}
+
+- Note: the figure referencing doesn't work for in ioslides (you are unlikely to be cross-referencing anyway)
+- Reference as usual with `\@ref(fig:label)` (e.g. `\@ref(fig:wavesanim)` becomes Figure \@ref(fig:wavesanim))
+- Captions make good places to links to graph
+
+## Desmos shortcomings {.build}
+
+- The embed only shows the plot, but *not* the left hand panel - you have to add sliders or student visit page to view the source
+- Not all Greek letters letters recognised! ([Fix: Chrome/Edge addin for full Greek alphabet](https://chrome.google.com/webstore/detail/desmos-more-greek-letters/ehedmkmgdeekblhmnogcdimeohjilkjb?hl=en#)
+- No permalinks - Desmos updates URL after each save
+- Graphs are public - don't put any personal/private data there
+- It's possible but generally not recommended to embed the whole calculator (see \@ref(sec:embed-whole-desmos))
+
+### What about my PDFs/offline support? {-}
+If there is no connection to the internet, the iframe will *not* load.
+
+If you compile to a PDF, nothing is displayed, which is why a link is important! Possibly, one can do something clever in R to add use an image if knit to PDF...
+
+
+## Take away messages
+
+<div class="columns-2">
+<img src="./images/undraw_online_resume_re_ru7s.png" alt="person with laptop sitting on top of large browser window" width=500px>
+
+- It's easy to  embed web content with bookdown
+- Embeds don't work for offline/PDF use
+- Desmos is free, interactive for students and easy to use: give it a try!
+
+</div>
