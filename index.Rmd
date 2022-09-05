@@ -13,3 +13,10 @@ output:
     css: ioslides.css
 ---
 
+# Introduction
+This content was made as part of the University of Bath "Creating Accessible Online resources" bookdown away day 2022.
+
+The aim is to:
+
+- cover the how, why and pitfalls with embedded content
+- introduce the Desmos graphing calculator.

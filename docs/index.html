@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5 Appendicies | The power of the browser:</title>
-  <meta name="description" content="5 Appendicies | The power of the browser:" />
+  <title>The power of the browser:</title>
+  <meta name="description" content="The power of the browser:" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5 Appendicies | The power of the browser:" />
+  <meta property="og:title" content="The power of the browser:" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5 Appendicies | The power of the browser:" />
+  <meta name="twitter:title" content="The power of the browser:" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="desmos-a-simple-interactive-graphing-calculator.html"/>
 
+<link rel="next" href="why-embed-content.html"/>
 <script src="libs/header-attrs-2.15/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -129,58 +129,29 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sec:appendicies" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">5</span> Appendicies<a href="sec-appendicies.html#sec:appendicies" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="sec:embed-whole-desmos" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Embedding the whole Desmos calculator<a href="sec-appendicies.html#sec:embed-whole-desmos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This is <strong>not</strong> generally recommended:</p>
-<ul>
-<li>if you alter a parameter, you get an annoying “do you want to leave this page” when trying to read next page</li>
-<li>can be a squeeze on smaller screens</li>
-</ul>
-<iframe src="https://www.desmos.com/calculator/znlimgwkld" title="Damped Harmonic Oscillator in Desmos" width="100%" height="500px">
-</iframe>
+<div id="header">
+<h1 class="title">The power of the browser:</h1>
+<h2 class="subtitle"><em>embedding Desmos and other content</em></h2>
+<p class="author"><em>Josh Lim <br> Learning Technologist (Centre for Learning &amp; Teaching)</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>6<sup>th</sup> September 2022</em></p>
 </div>
-<div id="general-tips-for-iframes-and-bookdown" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> General tips for iframes and bookdown<a href="sec-appendicies.html#general-tips-for-iframes-and-bookdown" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This content was made as part of the University of Bath “Creating Accessible Online resources” bookdown away day 2022.</p>
+<p>The aim is to:</p>
 <ul>
-<li>don’t have too many iframes per page (can be slow to load, take up resources)</li>
-<li>student interactions aren’t persistent and nothing gets saved: they get reloaded by a student every time they visit a page</li>
-<li>Consider mobile/tablet users where the screen sizes are smaller: sometimes a link is better?</li>
-<li>Avoid sites with advertising or a cookie requests that distracts from the content.</li>
-<li>there isn’t always much space, so pick simple things to embed (bookdown has comfortable margins)</li>
-<li>an iframe won’t display for students if they’re offline or viewing the PDF.</li>
+<li>cover the how, why and pitfalls with embedded content</li>
+<li>introduce the Desmos graphing calculator.</li>
 </ul>
-</div>
-<div id="iframes-and-accessibility-pitfalls" class="section level2 hasAnchor" number="5.3">
-<h2><span class="header-section-number">5.3</span> iframes and accessibility pitfalls<a href="sec-appendicies.html#iframes-and-accessibility-pitfalls" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are no intrinsic accessibility issues with iframes.</p>
-<p><em>However</em></p>
-<ul>
-<li>not all iframes work nicely on mobile browsers.</li>
-<li>the organization of the pages may not be clear to screen readers.</li>
-<li>navigation (via keyboard or due to increased zoom/limited size) can be challenging.</li>
-</ul>
-<div id="accessibility-suggestions" class="section level3 unnumbered hasAnchor">
-<h3>Accessibility suggestions<a href="sec-appendicies.html#accessibility-suggestions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Test how it appears on your phone</li>
-<li>Pick shorter/simple pages or sites that generate an embed code, rather than write your own.</li>
-<li>Present a direct link alternative</li>
-</ul>
-<hr />
-<p>Stock images from <a href="https://undraw.co">undraw</a> (open source, colour-customisable images that can be used without attribution)</p>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="desmos-a-simple-interactive-graphing-calculator.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
+<a href="why-embed-content.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
